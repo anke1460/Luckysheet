@@ -54,6 +54,7 @@ export const defaultToolbar = [
     'dataVerification',
     'splitColumn',
     'screenshot',
+    'save_data',
     'findAndReplace',
     'protection',
     'print'
@@ -94,6 +95,7 @@ export const toolbarIdMap = {
     conditionalFormat: '#luckysheet-icon-conditionformat', //'Conditional Format'
     dataVerification: '#luckysheet-dataVerification-btn-title', // 'Data Verification'
     splitColumn: '#luckysheet-splitColumn-btn-title', //'Split column'
+    save_data: "#luckysheet-save-data",
     screenshot: '#luckysheet-chart-btn-screenshot', //'screenshot'
     findAndReplace: '#luckysheet-icon-seachmore', //'Find and Replace'
     protection: '#luckysheet-icon-protection', // 'Worksheet protection'
@@ -777,6 +779,13 @@ export function createToolbarHtml() {
                 </div>
             </div>
         </div>`, //'screenshot'
+        save_data: `<div class="luckysheet-toolbar-button luckysheet-inline-block"
+        data-tips="${toolbar.save_data}" id="luckysheet-save-data" role="button" style="user-select: none;">
+            <div class="luckysheet-inline-block luckysheet-save-data"
+            style="user-select: none;">
+                ${toolbar.save_data}
+            </div>
+        </div>`, //'save_data'
         findAndReplace: `<div class="luckysheet-toolbar-select luckysheet-toolbar-menu-button luckysheet-inline-block" data-tips="${toolbar.findAndReplace}"
         id="luckysheet-icon-seachmore" role="button" style="user-select: none;">
             <div class="luckysheet-toolbar-menu-button-outer-box luckysheet-inline-block"

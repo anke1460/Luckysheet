@@ -5836,6 +5836,7 @@ export default {
         pivotTable: 'Pivot Table',
         chart: 'Chart',
         screenshot: 'Screenshot',
+        save_data: 'Save',
         splitColumn: 'Split text',
         insertImage: 'Insert image',
         insertLink: 'Insert link',

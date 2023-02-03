@@ -5833,9 +5833,10 @@ export default {
         moreFunction: '更多函数',
         conditionalFormat: '条件格式',
         postil: '批注',
-        pivotTable: '数据透视表', 
+        pivotTable: '数据透视表',
         chart: '图表',
         screenshot: '截图',
+        save_data: '保存数据',
         splitColumn: '分列',
         insertImage: '插入图片',
         insertLink: '插入链接',
@@ -6258,8 +6259,8 @@ export default {
         "columnSortMergeError":"列排序会扩展至整个表格选区，选区有合并单元格，无法执行此操作，请选择功能栏排序功能！",
     },
     filter:{
-        "filter":"筛选", 
-        "clearFilter":"清除筛选", 
+        "filter":"筛选",
+        "clearFilter":"清除筛选",
 
         sortByAsc:"以A-Z升序排列",
         sortByDesc:"以Z-A降序排列",
@@ -6431,7 +6432,7 @@ export default {
         "semicolon":"分号",
         "comma":"逗号",
         "space":"空格",
-        
+
     },
     findAndReplace:{
         find:"查找",

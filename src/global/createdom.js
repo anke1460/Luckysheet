@@ -1,7 +1,7 @@
-import { 
-    gridHTML, 
-    menuToolBar, 
-    flow, 
+import {
+    gridHTML,
+    menuToolBar,
+    flow,
     columnHeaderHTML,
     maskHTML,
     colsmenuHTML,
@@ -50,7 +50,7 @@ export default function luckysheetcreatedom(colwidth, rowheight, data, menu, tit
     // else {
     //     Store.flowdata = data;
     // }
-    
+
     let flowHTML = flow;
     if(Store.config == null){
         Store.config = {};
@@ -65,10 +65,11 @@ export default function luckysheetcreatedom(colwidth, rowheight, data, menu, tit
     let backControll = ' <button id="luckysheet-bottom-bottom-top" class="btn btn-default" style="">'+ locale_info.backTop +'</button>';
     // let pageControll = ' <span id="luckysheet-bottom-page-info" style="font-size: 14px;color: #f34141;">共'+ luckysheetConfigsetting.pageInfo.totalPage +'页，当前已显示'+ (luckysheetConfigsetting.pageInfo.currentPage) +'页，每页'+ luckysheetConfigsetting.pageInfo.pageSize +'条</span> <button id="luckysheet-bottom-page-next" class="btn btn-danger" style="">下一页</button>';
     let pageInfo = replaceHtml(locale_info.pageInfo,{
-        total:luckysheetConfigsetting.total?luckysheetConfigsetting.total:"",
+        total:luckysheetConfigsetting.pageInfo.total?luckysheetConfigsetting.pageInfo.total:"",
         totalPage:luckysheetConfigsetting.pageInfo.totalPage?luckysheetConfigsetting.pageInfo.totalPage:"",
         currentPage:luckysheetConfigsetting.pageInfo.currentPage?luckysheetConfigsetting.pageInfo.currentPage:"",
     });
+
     let pageControll = ' <span id="luckysheet-bottom-page-info" style="font-size: 14px;color: #f34141;">'+ pageInfo +'</span> <button id="luckysheet-bottom-page-next" class="btn btn-danger" style="">下一页</button>';
     let pageControll2 = ' <span id="luckysheet-bottom-page-info" style="font-size: 14px;color: #f34141;">'+pageInfo+'</span>';
 

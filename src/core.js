@@ -179,6 +179,12 @@ luckysheet.create = function (setting) {
             let data = new Function("return " + d)();
             Store.luckysheetfile = data;
 
+            if (data[0] && data[0].total) {
+                // 添加分页数
+              luckysheetConfigsetting.pageInfo.total = data[0].total;
+              luckysheetConfigsetting.pageInfo.totalPage = data[0].page_size;
+            }
+
             sheetmanage.initialjfFile(menu, title);
             // luckysheetsizeauto();
             initialWorkBook();
